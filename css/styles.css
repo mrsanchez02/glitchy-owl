@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --image: url('../img/owl-png.png');
+  --image-glith-1:url('../img/owl-png-1.png');
+  --image-glith-2:url('../img/owl-png-2.png');
+  --image-glith-3:url('../img/owl-png-3.png');
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glitch{
+  width: 300px;
+  height: 340px;
+  background: var(--image);
+  background-size: cover;
+  animation: glitch 3.5s infinite steps(1);
+}
+
+@keyframes glitch {
+  0%, 100% {
+    background: var(--image);
+    background-size: cover;
+    opacity: 1;
+  }
+  92.5% {
+    background: var(--image-glith-1);
+    background-size: cover;
+    opacity: 1;
+  }
+  95%{
+    background: var(--image-glith-2);
+    background-size: cover;
+    opacity: 0;
+  }
+  97.5%{
+    background: var(--image-glith-3);
+    background-size: cover;
+    opacity: 1;
+  }
+
+
+}
