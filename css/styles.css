@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgb(246, 246, 246);
 }
 
 .glitch{
